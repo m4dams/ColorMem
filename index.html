@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Sequence Game</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="cs.css">
+	
+</head>
+	<h1>
+		Color Sequence Game
+	</h1>
+	<div>
+		
+	
+	<p>
+		Instructions: <span id="easy">For Easy the sequence increases with one click each time you get the entire sequence right. </span><span class="hidden" id="hard">For Hard mode there are 6 colors and not only does the sequence increase but the sequence itself changes each time.</span>Maximum achievable points for each round are 100. You can replay the sequence up to 3 times but each time the awarded score for the current round will decrease.
+		<ul>
+			<li>1 replay reduces score to 50</li>
+			<li>2 replays reduce score to 25</li>
+			<li>3 replays reduce score to 1</li>
+		</ul>
+		If you are ready to begin press start!
+	</p>
+	</div>	
+	<div class="container">
+	  <div class="row">
+		<div class="col-sm-3">
+			<button id="start">Start</button>
+			<br>
+			<button id="replay">Replay Sequence</button>
+		</div>
+		<div class="col-sm-6">
+			<div class="square hidden" 	onclick="game.psequence+='0'"></div>
+			<div class="square hidden"	onclick="game.psequence+='1'"></div>
+			<div class="square hidden"	onclick="game.psequence+='2'"></div>
+			<div class="square hidden"	onclick="game.psequence+='3'"></div>
+			<div class="square hidden"	onclick="game.psequence+='4'"></div>
+			<div class="square hidden"	onclick="game.psequence+='5'"></div>
+		</div>
+		<div class="col-sm-3 scores hidden">
+			<h3 id="hScoreP">High Score: <span id="hScore">0</span></h3>	
+		</div>
+	  </div>
+	</div>
+	<div class="scores hidden">
+		<h4>Current achievable: <span id="cMax"></span></h4><br>
+		<h3>Current Score: <span id="cScore">0</span></h3>
+	</div>
+	
+
+	
+<script type="text/javascript" src="cs.js"></script>	
+<body>
+
+</body>
+</html>

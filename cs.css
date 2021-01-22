@@ -1,0 +1,43 @@
+body {
+	background-color:#232323;
+	color:red;
+}
+.square {
+	display:none;
+	width:30%;
+	padding-bottom:30%;
+	background-color:blue;
+	float:left;
+	margin:1.66%;
+	border-radius:15%;
+	box-shadow:3px 3px #bbbfa3;
+	}
+
+.visible {
+	display:block;
+}
+
+.hidden {
+	display:none;
+}
+
+#hScoreP {
+	margin:50% auto;
+}
+
+/*.square:hover{
+	transition:all 0.2s;
+	box-shadow:3px 3px #bbbfa3;
+}*/
+
+.square:active{
+	transition:all 0.2s;
+	box-shadow:-3px -3px #bbbfa3;
+}
+.display{
+	transition:all 0.2s;
+	box-shadow:-3px -3px #bbbfa3;
+}
+.scores{
+	margin:0 auto;
+}
